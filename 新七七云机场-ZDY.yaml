@@ -1,0 +1,979 @@
+allow-lan: true
+bind-address: '*'
+dns:
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fallback:
+  - 'https://doh.dns.sb/dns-query'
+  - 'https://dns.cloudflare.com/dns-query'
+  - 'https://dns.twnic.tw/dns-query'
+  - 'tls://8.8.4.4:853'
+  fallback-filter:
+    geoip: true
+    ipcidr:
+    - 240.0.0.0/4
+    - 0.0.0.0/32
+  ipv6: false
+  nameserver:
+  - 'https://doh.pub/dns-query'
+  - 'https://dns.alidns.com/dns-query'
+  use-hosts: true
+external-controller: '127.0.0.1:9090'
+log-level: info
+mixed-port: 7890
+mode: rule
+proxies:
+- alterId: 0
+  cipher: auto
+  name: '剩余流量：999.31 GB'
+  network: ws
+  port: 80
+  server: 0.0.0.0
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+- alterId: 0
+  cipher: auto
+  name: '距离下次重置剩余：22 天'
+  network: ws
+  port: 80
+  server: 0.0.0.0
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+- alterId: 0
+  cipher: auto
+  name: 套餐到期：2023-05-11
+  network: ws
+  port: 80
+  server: 0.0.0.0
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+- alterId: 0
+  cipher: auto
+  name: 部分海外节点被墙今天逐步恢复
+  network: ws
+  port: 80
+  server: 0.0.0.0
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+- alterId: 0
+  cipher: auto
+  name: 'TG群：https://t.me/ace8860'
+  network: ws
+  port: 80
+  server: 0.0.0.0
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+- alterId: 0
+  cipher: auto
+  name: 上海/高速/8888端口
+  network: ws
+  port: 8888
+  server: 101.89.133.198
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国/广西/80端口
+  network: ws
+  port: 80
+  server: 113.17.185.226
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国/江苏常州/80端口
+  network: ws
+  port: 80
+  server: 43.248.117.82
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 游戏专用/北京5M/80端口
+  network: ws
+  port: 80
+  server: 111.67.201.10
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 游戏专用/镇江BGP/
+  network: ws
+  port: 80
+  server: 180.97.215.167
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 海外节点均已解锁流媒体
+  network: ws
+  port: 80
+  server: 146.56.130.198
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-opts:
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 韩国首尔/高速-arm2
+  network: ws
+  port: 80
+  server: 130.162.132.90
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中转/越南/80端口/GPT.TK.奈飞
+  network: ws
+  port: 15000
+  server: gzzz.8bqyato.ml
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中转/日本/均速
+  network: ws
+  port: 24523
+  server: gzzz.8bqyato.ml
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中转/新加坡/均速
+  network: ws
+  port: 24523
+  server: gzzz.8bqyato.ml
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 美国/高速-1
+  network: ws
+  port: 80
+  server: 3.89.116.126
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 美国/高速-2
+  network: ws
+  port: 80
+  server: 35.165.55.219
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大/多伦多arm2/高速
+  network: ws
+  port: 80
+  server: 129.153.59.87
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大/多伦多arm3/高速
+  network: ws
+  port: 80
+  server: 129.153.49.37
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 加拿大/多伦多arm4/高速
+  network: ws
+  port: 80
+  server: 129.153.53.167
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 德国/刷流量节点
+  network: ws
+  port: 80
+  server: 143.42.49.176
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 澳大利亚/刷流量节点
+  network: ws
+  port: 80
+  server: 192.53.168.73
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 印度2/刷流量节点
+  network: ws
+  port: 80
+  server: 45.79.124.90
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 印度/刷流量节点
+  network: ws
+  port: 80
+  server: 172.232.67.224
+  type: vmess
+  udp: true
+  uuid: 244f7f5f-75b6-4cec-8c54-bbc78eefc7bf
+  ws-headers:
+    Host: gw.alicdn.com
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  ws-path: /
+proxy-groups:
+- name: 新七七云机场
+  proxies:
+  - 自动选择
+  - 故障转移
+  - '剩余流量：999.31 GB'
+  - '距离下次重置剩余：22 天'
+  - 套餐到期：2023-05-11
+  - 部分海外节点被墙今天逐步恢复
+  - 'TG群：https://t.me/ace8860'
+  - 上海/高速/8888端口
+  - 中国/广西/80端口
+  - 中国/江苏常州/80端口
+  - 游戏专用/北京5M/80端口
+  - 游戏专用/镇江BGP/
+  - 海外节点均已解锁流媒体
+  - 韩国首尔/高速-arm2
+  - 中转/越南/80端口/GPT.TK.奈飞
+  - 中转/日本/均速
+  - 中转/新加坡/均速
+  - 美国/高速-1
+  - 美国/高速-2
+  - 加拿大/多伦多arm2/高速
+  - 加拿大/多伦多arm3/高速
+  - 加拿大/多伦多arm4/高速
+  - 德国/刷流量节点
+  - 澳大利亚/刷流量节点
+  - 印度2/刷流量节点
+  - 印度/刷流量节点
+  type: select
+- interval: 86400
+  name: 自动选择
+  proxies:
+  - '剩余流量：999.31 GB'
+  - '距离下次重置剩余：22 天'
+  - 套餐到期：2023-05-11
+  - 部分海外节点被墙今天逐步恢复
+  - 'TG群：https://t.me/ace8860'
+  - 上海/高速/8888端口
+  - 中国/广西/80端口
+  - 中国/江苏常州/80端口
+  - 游戏专用/北京5M/80端口
+  - 游戏专用/镇江BGP/
+  - 海外节点均已解锁流媒体
+  - 韩国首尔/高速-arm2
+  - 中转/越南/80端口/GPT.TK.奈飞
+  - 中转/日本/均速
+  - 中转/新加坡/均速
+  - 美国/高速-1
+  - 美国/高速-2
+  - 加拿大/多伦多arm2/高速
+  - 加拿大/多伦多arm3/高速
+  - 加拿大/多伦多arm4/高速
+  - 德国/刷流量节点
+  - 澳大利亚/刷流量节点
+  - 印度2/刷流量节点
+  - 印度/刷流量节点
+  type: url-test
+  url: 'http://www.gstatic.com/generate_204'
+- interval: 7200
+  name: 故障转移
+  proxies:
+  - '剩余流量：999.31 GB'
+  - '距离下次重置剩余：22 天'
+  - 套餐到期：2023-05-11
+  - 部分海外节点被墙今天逐步恢复
+  - 'TG群：https://t.me/ace8860'
+  - 上海/高速/8888端口
+  - 中国/广西/80端口
+  - 中国/江苏常州/80端口
+  - 游戏专用/北京5M/80端口
+  - 游戏专用/镇江BGP/
+  - 海外节点均已解锁流媒体
+  - 韩国首尔/高速-arm2
+  - 中转/越南/80端口/GPT.TK.奈飞
+  - 中转/日本/均速
+  - 中转/新加坡/均速
+  - 美国/高速-1
+  - 美国/高速-2
+  - 加拿大/多伦多arm2/高速
+  - 加拿大/多伦多arm3/高速
+  - 加拿大/多伦多arm4/高速
+  - 德国/刷流量节点
+  - 澳大利亚/刷流量节点
+  - 印度2/刷流量节点
+  - 印度/刷流量节点
+  type: fallback
+  url: 'http://www.gstatic.com/generate_204'
+rules:
+- DOMAIN,safebrowsing.googleapis.com,新七七云机场
+- DOMAIN,safebrowsing.googleapis.com,新七七云机场
+- DOMAIN,dingyue.yato.ml,新七七云机场
+- 'DOMAIN-SUFFIX,services.googleapis.cn,新七七云机场'
+- 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,新七七云机场'
+- DOMAIN,safebrowsing.urlsec.qq.com,新七七云机场
+- DOMAIN,safebrowsing.googleapis.com,新七七云机场
+- 'DOMAIN,developer.apple.com,新七七云机场'
+- 'DOMAIN-SUFFIX,digicert.com,新七七云机场'
+- 'DOMAIN,ocsp.apple.com,新七七云机场'
+- 'DOMAIN,ocsp.comodoca.com,新七七云机场'
+- 'DOMAIN,ocsp.usertrust.com,新七七云机场'
+- 'DOMAIN,ocsp.sectigo.com,新七七云机场'
+- 'DOMAIN,ocsp.verisign.net,新七七云机场'
+- 'DOMAIN-SUFFIX,apple-dns.net,新七七云机场'
+- 'DOMAIN,testflight.apple.com,新七七云机场'
+- 'DOMAIN,sandbox.itunes.apple.com,新七七云机场'
+- 'DOMAIN,itunes.apple.com,新七七云机场'
+- 'DOMAIN-SUFFIX,apps.apple.com,新七七云机场'
+- 'DOMAIN-SUFFIX,blobstore.apple.com,新七七云机场'
+- 'DOMAIN,cvws.icloud-content.com,新七七云机场'
+- 'DOMAIN-SUFFIX,mzstatic.com,新七七云机场'
+- 'DOMAIN-SUFFIX,itunes.apple.com,新七七云机场'
+- 'DOMAIN-SUFFIX,icloud.com,新七七云机场'
+- 'DOMAIN-SUFFIX,icloud-content.com,新七七云机场'
+- 'DOMAIN-SUFFIX,me.com,新七七云机场'
+- 'DOMAIN-SUFFIX,aaplimg.com,新七七云机场'
+- 'DOMAIN-SUFFIX,cdn20.com,新七七云机场'
+- 'DOMAIN-SUFFIX,cdn-apple.com,新七七云机场'
+- 'DOMAIN-SUFFIX,akadns.net,新七七云机场'
+- 'DOMAIN-SUFFIX,akamaiedge.net,新七七云机场'
+- 'DOMAIN-SUFFIX,edgekey.net,新七七云机场'
+- 'DOMAIN-SUFFIX,mwcloudcdn.com,新七七云机场'
+- 'DOMAIN-SUFFIX,mwcname.com,新七七云机场'
+- 'DOMAIN-SUFFIX,apple.com,新七七云机场'
+- 'DOMAIN-SUFFIX,apple-cloudkit.com,新七七云机场'
+- 'DOMAIN-SUFFIX,apple-mapkit.com,新七七云机场'
+- 'DOMAIN-SUFFIX,126.com,新七七云机场'
+- 'DOMAIN-SUFFIX,126.net,新七七云机场'
+- 'DOMAIN-SUFFIX,127.net,新七七云机场'
+- 'DOMAIN-SUFFIX,163.com,新七七云机场'
+- 'DOMAIN-SUFFIX,360buyimg.com,新七七云机场'
+- 'DOMAIN-SUFFIX,36kr.com,新七七云机场'
+- 'DOMAIN-SUFFIX,acfun.tv,新七七云机场'
+- 'DOMAIN-SUFFIX,air-matters.com,新七七云机场'
+- 'DOMAIN-SUFFIX,aixifan.com,新七七云机场'
+- 'DOMAIN-KEYWORD,alicdn,新七七云机场'
+- 'DOMAIN-KEYWORD,alipay,新七七云机场'
+- 'DOMAIN-KEYWORD,taobao,新七七云机场'
+- 'DOMAIN-SUFFIX,amap.com,新七七云机场'
+- 'DOMAIN-SUFFIX,autonavi.com,新七七云机场'
+- 'DOMAIN-KEYWORD,baidu,新七七云机场'
+- 'DOMAIN-SUFFIX,bdimg.com,新七七云机场'
+- 'DOMAIN-SUFFIX,bdstatic.com,新七七云机场'
+- 'DOMAIN-SUFFIX,bilibili.com,新七七云机场'
+- 'DOMAIN-SUFFIX,bilivideo.com,新七七云机场'
+- 'DOMAIN-SUFFIX,caiyunapp.com,新七七云机场'
+- 'DOMAIN-SUFFIX,clouddn.com,新七七云机场'
+- 'DOMAIN-SUFFIX,cnbeta.com,新七七云机场'
+- 'DOMAIN-SUFFIX,cnbetacdn.com,新七七云机场'
+- 'DOMAIN-SUFFIX,cootekservice.com,新七七云机场'
+- 'DOMAIN-SUFFIX,csdn.net,新七七云机场'
+- 'DOMAIN-SUFFIX,ctrip.com,新七七云机场'
+- 'DOMAIN-SUFFIX,dgtle.com,新七七云机场'
+- 'DOMAIN-SUFFIX,dianping.com,新七七云机场'
+- 'DOMAIN-SUFFIX,douban.com,新七七云机场'
+- 'DOMAIN-SUFFIX,doubanio.com,新七七云机场'
+- 'DOMAIN-SUFFIX,duokan.com,新七七云机场'
+- 'DOMAIN-SUFFIX,easou.com,新七七云机场'
+- 'DOMAIN-SUFFIX,ele.me,新七七云机场'
+- 'DOMAIN-SUFFIX,feng.com,新七七云机场'
+- 'DOMAIN-SUFFIX,fir.im,新七七云机场'
+- 'DOMAIN-SUFFIX,frdic.com,新七七云机场'
+- 'DOMAIN-SUFFIX,g-cores.com,新七七云机场'
+- 'DOMAIN-SUFFIX,godic.net,新七七云机场'
+- 'DOMAIN-SUFFIX,gtimg.com,新七七云机场'
+- 'DOMAIN,cdn.hockeyapp.net,新七七云机场'
+- 'DOMAIN-SUFFIX,hongxiu.com,新七七云机场'
+- 'DOMAIN-SUFFIX,hxcdn.net,新七七云机场'
+- 'DOMAIN-SUFFIX,iciba.com,新七七云机场'
+- 'DOMAIN-SUFFIX,ifeng.com,新七七云机场'
+- 'DOMAIN-SUFFIX,ifengimg.com,新七七云机场'
+- 'DOMAIN-SUFFIX,ipip.net,新七七云机场'
+- 'DOMAIN-SUFFIX,iqiyi.com,新七七云机场'
+- 'DOMAIN-SUFFIX,jd.com,新七七云机场'
+- 'DOMAIN-SUFFIX,jianshu.com,新七七云机场'
+- 'DOMAIN-SUFFIX,knewone.com,新七七云机场'
+- 'DOMAIN-SUFFIX,le.com,新七七云机场'
+- 'DOMAIN-SUFFIX,lecloud.com,新七七云机场'
+- 'DOMAIN-SUFFIX,lemicp.com,新七七云机场'
+- 'DOMAIN-SUFFIX,licdn.com,新七七云机场'
+- 'DOMAIN-SUFFIX,luoo.net,新七七云机场'
+- 'DOMAIN-SUFFIX,meituan.com,新七七云机场'
+- 'DOMAIN-SUFFIX,meituan.net,新七七云机场'
+- 'DOMAIN-SUFFIX,mi.com,新七七云机场'
+- 'DOMAIN-SUFFIX,miaopai.com,新七七云机场'
+- 'DOMAIN-SUFFIX,microsoft.com,新七七云机场'
+- 'DOMAIN-SUFFIX,microsoftonline.com,新七七云机场'
+- 'DOMAIN-SUFFIX,miui.com,新七七云机场'
+- 'DOMAIN-SUFFIX,miwifi.com,新七七云机场'
+- 'DOMAIN-SUFFIX,mob.com,新七七云机场'
+- 'DOMAIN-SUFFIX,netease.com,新七七云机场'
+- 'DOMAIN-SUFFIX,office.com,新七七云机场'
+- 'DOMAIN-SUFFIX,office365.com,新七七云机场'
+- 'DOMAIN-KEYWORD,officecdn,新七七云机场'
+- 'DOMAIN-SUFFIX,oschina.net,新七七云机场'
+- 'DOMAIN-SUFFIX,ppsimg.com,新七七云机场'
+- 'DOMAIN-SUFFIX,pstatp.com,新七七云机场'
+- 'DOMAIN-SUFFIX,qcloud.com,新七七云机场'
+- 'DOMAIN-SUFFIX,qdaily.com,新七七云机场'
+- 'DOMAIN-SUFFIX,qdmm.com,新七七云机场'
+- 'DOMAIN-SUFFIX,qhimg.com,新七七云机场'
+- 'DOMAIN-SUFFIX,qhres.com,新七七云机场'
+- 'DOMAIN-SUFFIX,qidian.com,新七七云机场'
+- 'DOMAIN-SUFFIX,qihucdn.com,新七七云机场'
+- 'DOMAIN-SUFFIX,qiniu.com,新七七云机场'
+- 'DOMAIN-SUFFIX,qiniucdn.com,新七七云机场'
+- 'DOMAIN-SUFFIX,qiyipic.com,新七七云机场'
+- 'DOMAIN-SUFFIX,qq.com,新七七云机场'
+- 'DOMAIN-SUFFIX,qqurl.com,新七七云机场'
+- 'DOMAIN-SUFFIX,rarbg.to,新七七云机场'
+- 'DOMAIN-SUFFIX,ruguoapp.com,新七七云机场'
+- 'DOMAIN-SUFFIX,segmentfault.com,新七七云机场'
+- 'DOMAIN-SUFFIX,sinaapp.com,新七七云机场'
+- 'DOMAIN-SUFFIX,smzdm.com,新七七云机场'
+- 'DOMAIN-SUFFIX,snapdrop.net,新七七云机场'
+- 'DOMAIN-SUFFIX,sogou.com,新七七云机场'
+- 'DOMAIN-SUFFIX,sogoucdn.com,新七七云机场'
+- 'DOMAIN-SUFFIX,sohu.com,新七七云机场'
+- 'DOMAIN-SUFFIX,soku.com,新七七云机场'
+- 'DOMAIN-SUFFIX,speedtest.net,新七七云机场'
+- 'DOMAIN-SUFFIX,sspai.com,新七七云机场'
+- 'DOMAIN-SUFFIX,suning.com,新七七云机场'
+- 'DOMAIN-SUFFIX,taobao.com,新七七云机场'
+- 'DOMAIN-SUFFIX,tencent.com,新七七云机场'
+- 'DOMAIN-SUFFIX,tenpay.com,新七七云机场'
+- 'DOMAIN-SUFFIX,tianyancha.com,新七七云机场'
+- 'DOMAIN-SUFFIX,tmall.com,新七七云机场'
+- 'DOMAIN-SUFFIX,tudou.com,新七七云机场'
+- 'DOMAIN-SUFFIX,umetrip.com,新七七云机场'
+- 'DOMAIN-SUFFIX,upaiyun.com,新七七云机场'
+- 'DOMAIN-SUFFIX,upyun.com,新七七云机场'
+- 'DOMAIN-SUFFIX,veryzhun.com,新七七云机场'
+- 'DOMAIN-SUFFIX,weather.com,新七七云机场'
+- 'DOMAIN-SUFFIX,weibo.com,新七七云机场'
+- 'DOMAIN-SUFFIX,xiami.com,新七七云机场'
+- 'DOMAIN-SUFFIX,xiami.net,新七七云机场'
+- 'DOMAIN-SUFFIX,xiaomicp.com,新七七云机场'
+- 'DOMAIN-SUFFIX,ximalaya.com,新七七云机场'
+- 'DOMAIN-SUFFIX,xmcdn.com,新七七云机场'
+- 'DOMAIN-SUFFIX,xunlei.com,新七七云机场'
+- 'DOMAIN-SUFFIX,yhd.com,新七七云机场'
+- 'DOMAIN-SUFFIX,yihaodianimg.com,新七七云机场'
+- 'DOMAIN-SUFFIX,yinxiang.com,新七七云机场'
+- 'DOMAIN-SUFFIX,ykimg.com,新七七云机场'
+- 'DOMAIN-SUFFIX,youdao.com,新七七云机场'
+- 'DOMAIN-SUFFIX,youku.com,新七七云机场'
+- 'DOMAIN-SUFFIX,zealer.com,新七七云机场'
+- 'DOMAIN-SUFFIX,zhihu.com,新七七云机场'
+- 'DOMAIN-SUFFIX,zhimg.com,新七七云机场'
+- 'DOMAIN-SUFFIX,zimuzu.tv,新七七云机场'
+- 'DOMAIN-SUFFIX,zoho.com,新七七云机场'
+- 'DOMAIN-KEYWORD,amazon,新七七云机场'
+- 'DOMAIN-KEYWORD,google,新七七云机场'
+- 'DOMAIN-KEYWORD,gmail,新七七云机场'
+- 'DOMAIN-KEYWORD,youtube,新七七云机场'
+- 'DOMAIN-KEYWORD,facebook,新七七云机场'
+- 'DOMAIN-SUFFIX,fb.me,新七七云机场'
+- 'DOMAIN-SUFFIX,fbcdn.net,新七七云机场'
+- 'DOMAIN-KEYWORD,twitter,新七七云机场'
+- 'DOMAIN-KEYWORD,instagram,新七七云机场'
+- 'DOMAIN-KEYWORD,dropbox,新七七云机场'
+- 'DOMAIN-SUFFIX,twimg.com,新七七云机场'
+- 'DOMAIN-KEYWORD,blogspot,新七七云机场'
+- 'DOMAIN-SUFFIX,youtu.be,新七七云机场'
+- 'DOMAIN-KEYWORD,whatsapp,新七七云机场'
+- 'DOMAIN-KEYWORD,admarvel,REJECT'
+- 'DOMAIN-KEYWORD,admaster,REJECT'
+- 'DOMAIN-KEYWORD,adsage,REJECT'
+- 'DOMAIN-KEYWORD,adsmogo,REJECT'
+- 'DOMAIN-KEYWORD,adsrvmedia,REJECT'
+- 'DOMAIN-KEYWORD,adwords,REJECT'
+- 'DOMAIN-KEYWORD,adservice,REJECT'
+- 'DOMAIN-SUFFIX,appsflyer.com,REJECT'
+- 'DOMAIN-KEYWORD,domob,REJECT'
+- 'DOMAIN-SUFFIX,doubleclick.net,REJECT'
+- 'DOMAIN-KEYWORD,duomeng,REJECT'
+- 'DOMAIN-KEYWORD,dwtrack,REJECT'
+- 'DOMAIN-KEYWORD,guanggao,REJECT'
+- 'DOMAIN-KEYWORD,lianmeng,REJECT'
+- 'DOMAIN-SUFFIX,mmstat.com,REJECT'
+- 'DOMAIN-KEYWORD,mopub,REJECT'
+- 'DOMAIN-KEYWORD,omgmta,REJECT'
+- 'DOMAIN-KEYWORD,openx,REJECT'
+- 'DOMAIN-KEYWORD,partnerad,REJECT'
+- 'DOMAIN-KEYWORD,pingfore,REJECT'
+- 'DOMAIN-KEYWORD,supersonicads,REJECT'
+- 'DOMAIN-KEYWORD,uedas,REJECT'
+- 'DOMAIN-KEYWORD,umeng,REJECT'
+- 'DOMAIN-KEYWORD,usage,REJECT'
+- 'DOMAIN-SUFFIX,vungle.com,REJECT'
+- 'DOMAIN-KEYWORD,wlmonitor,REJECT'
+- 'DOMAIN-KEYWORD,zjtoolbar,REJECT'
+- 'DOMAIN-SUFFIX,9to5mac.com,新七七云机场'
+- 'DOMAIN-SUFFIX,abpchina.org,新七七云机场'
+- 'DOMAIN-SUFFIX,adblockplus.org,新七七云机场'
+- 'DOMAIN-SUFFIX,adobe.com,新七七云机场'
+- 'DOMAIN-SUFFIX,akamaized.net,新七七云机场'
+- 'DOMAIN-SUFFIX,alfredapp.com,新七七云机场'
+- 'DOMAIN-SUFFIX,amplitude.com,新七七云机场'
+- 'DOMAIN-SUFFIX,ampproject.org,新七七云机场'
+- 'DOMAIN-SUFFIX,android.com,新七七云机场'
+- 'DOMAIN-SUFFIX,angularjs.org,新七七云机场'
+- 'DOMAIN-SUFFIX,aolcdn.com,新七七云机场'
+- 'DOMAIN-SUFFIX,apkpure.com,新七七云机场'
+- 'DOMAIN-SUFFIX,appledaily.com,新七七云机场'
+- 'DOMAIN-SUFFIX,appshopper.com,新七七云机场'
+- 'DOMAIN-SUFFIX,appspot.com,新七七云机场'
+- 'DOMAIN-SUFFIX,arcgis.com,新七七云机场'
+- 'DOMAIN-SUFFIX,archive.org,新七七云机场'
+- 'DOMAIN-SUFFIX,armorgames.com,新七七云机场'
+- 'DOMAIN-SUFFIX,aspnetcdn.com,新七七云机场'
+- 'DOMAIN-SUFFIX,att.com,新七七云机场'
+- 'DOMAIN-SUFFIX,awsstatic.com,新七七云机场'
+- 'DOMAIN-SUFFIX,azureedge.net,新七七云机场'
+- 'DOMAIN-SUFFIX,azurewebsites.net,新七七云机场'
+- 'DOMAIN-SUFFIX,bing.com,新七七云机场'
+- 'DOMAIN-SUFFIX,bintray.com,新七七云机场'
+- 'DOMAIN-SUFFIX,bit.com,新七七云机场'
+- 'DOMAIN-SUFFIX,bit.ly,新七七云机场'
+- 'DOMAIN-SUFFIX,bitbucket.org,新七七云机场'
+- 'DOMAIN-SUFFIX,bjango.com,新七七云机场'
+- 'DOMAIN-SUFFIX,bkrtx.com,新七七云机场'
+- 'DOMAIN-SUFFIX,blog.com,新七七云机场'
+- 'DOMAIN-SUFFIX,blogcdn.com,新七七云机场'
+- 'DOMAIN-SUFFIX,blogger.com,新七七云机场'
+- 'DOMAIN-SUFFIX,blogsmithmedia.com,新七七云机场'
+- 'DOMAIN-SUFFIX,blogspot.com,新七七云机场'
+- 'DOMAIN-SUFFIX,blogspot.hk,新七七云机场'
+- 'DOMAIN-SUFFIX,bloomberg.com,新七七云机场'
+- 'DOMAIN-SUFFIX,box.com,新七七云机场'
+- 'DOMAIN-SUFFIX,box.net,新七七云机场'
+- 'DOMAIN-SUFFIX,cachefly.net,新七七云机场'
+- 'DOMAIN-SUFFIX,chromium.org,新七七云机场'
+- 'DOMAIN-SUFFIX,cl.ly,新七七云机场'
+- 'DOMAIN-SUFFIX,cloudflare.com,新七七云机场'
+- 'DOMAIN-SUFFIX,cloudfront.net,新七七云机场'
+- 'DOMAIN-SUFFIX,cloudmagic.com,新七七云机场'
+- 'DOMAIN-SUFFIX,cmail19.com,新七七云机场'
+- 'DOMAIN-SUFFIX,cnet.com,新七七云机场'
+- 'DOMAIN-SUFFIX,cocoapods.org,新七七云机场'
+- 'DOMAIN-SUFFIX,comodoca.com,新七七云机场'
+- 'DOMAIN-SUFFIX,crashlytics.com,新七七云机场'
+- 'DOMAIN-SUFFIX,culturedcode.com,新七七云机场'
+- 'DOMAIN-SUFFIX,d.pr,新七七云机场'
+- 'DOMAIN-SUFFIX,danilo.to,新七七云机场'
+- 'DOMAIN-SUFFIX,dayone.me,新七七云机场'
+- 'DOMAIN-SUFFIX,db.tt,新七七云机场'
+- 'DOMAIN-SUFFIX,deskconnect.com,新七七云机场'
+- 'DOMAIN-SUFFIX,disq.us,新七七云机场'
+- 'DOMAIN-SUFFIX,disqus.com,新七七云机场'
+- 'DOMAIN-SUFFIX,disquscdn.com,新七七云机场'
+- 'DOMAIN-SUFFIX,dnsimple.com,新七七云机场'
+- 'DOMAIN-SUFFIX,docker.com,新七七云机场'
+- 'DOMAIN-SUFFIX,dribbble.com,新七七云机场'
+- 'DOMAIN-SUFFIX,droplr.com,新七七云机场'
+- 'DOMAIN-SUFFIX,duckduckgo.com,新七七云机场'
+- 'DOMAIN-SUFFIX,dueapp.com,新七七云机场'
+- 'DOMAIN-SUFFIX,dytt8.net,新七七云机场'
+- 'DOMAIN-SUFFIX,edgecastcdn.net,新七七云机场'
+- 'DOMAIN-SUFFIX,edgekey.net,新七七云机场'
+- 'DOMAIN-SUFFIX,edgesuite.net,新七七云机场'
+- 'DOMAIN-SUFFIX,engadget.com,新七七云机场'
+- 'DOMAIN-SUFFIX,entrust.net,新七七云机场'
+- 'DOMAIN-SUFFIX,eurekavpt.com,新七七云机场'
+- 'DOMAIN-SUFFIX,evernote.com,新七七云机场'
+- 'DOMAIN-SUFFIX,fabric.io,新七七云机场'
+- 'DOMAIN-SUFFIX,fast.com,新七七云机场'
+- 'DOMAIN-SUFFIX,fastly.net,新七七云机场'
+- 'DOMAIN-SUFFIX,fc2.com,新七七云机场'
+- 'DOMAIN-SUFFIX,feedburner.com,新七七云机场'
+- 'DOMAIN-SUFFIX,feedly.com,新七七云机场'
+- 'DOMAIN-SUFFIX,feedsportal.com,新七七云机场'
+- 'DOMAIN-SUFFIX,fiftythree.com,新七七云机场'
+- 'DOMAIN-SUFFIX,firebaseio.com,新七七云机场'
+- 'DOMAIN-SUFFIX,flexibits.com,新七七云机场'
+- 'DOMAIN-SUFFIX,flickr.com,新七七云机场'
+- 'DOMAIN-SUFFIX,flipboard.com,新七七云机场'
+- 'DOMAIN-SUFFIX,g.co,新七七云机场'
+- 'DOMAIN-SUFFIX,gabia.net,新七七云机场'
+- 'DOMAIN-SUFFIX,geni.us,新七七云机场'
+- 'DOMAIN-SUFFIX,gfx.ms,新七七云机场'
+- 'DOMAIN-SUFFIX,ggpht.com,新七七云机场'
+- 'DOMAIN-SUFFIX,ghostnoteapp.com,新七七云机场'
+- 'DOMAIN-SUFFIX,git.io,新七七云机场'
+- 'DOMAIN-KEYWORD,github,新七七云机场'
+- 'DOMAIN-SUFFIX,globalsign.com,新七七云机场'
+- 'DOMAIN-SUFFIX,gmodules.com,新七七云机场'
+- 'DOMAIN-SUFFIX,godaddy.com,新七七云机场'
+- 'DOMAIN-SUFFIX,golang.org,新七七云机场'
+- 'DOMAIN-SUFFIX,gongm.in,新七七云机场'
+- 'DOMAIN-SUFFIX,goo.gl,新七七云机场'
+- 'DOMAIN-SUFFIX,goodreaders.com,新七七云机场'
+- 'DOMAIN-SUFFIX,goodreads.com,新七七云机场'
+- 'DOMAIN-SUFFIX,gravatar.com,新七七云机场'
+- 'DOMAIN-SUFFIX,gstatic.com,新七七云机场'
+- 'DOMAIN-SUFFIX,gvt0.com,新七七云机场'
+- 'DOMAIN-SUFFIX,hockeyapp.net,新七七云机场'
+- 'DOMAIN-SUFFIX,hotmail.com,新七七云机场'
+- 'DOMAIN-SUFFIX,icons8.com,新七七云机场'
+- 'DOMAIN-SUFFIX,ifixit.com,新七七云机场'
+- 'DOMAIN-SUFFIX,ift.tt,新七七云机场'
+- 'DOMAIN-SUFFIX,ifttt.com,新七七云机场'
+- 'DOMAIN-SUFFIX,iherb.com,新七七云机场'
+- 'DOMAIN-SUFFIX,imageshack.us,新七七云机场'
+- 'DOMAIN-SUFFIX,img.ly,新七七云机场'
+- 'DOMAIN-SUFFIX,imgur.com,新七七云机场'
+- 'DOMAIN-SUFFIX,imore.com,新七七云机场'
+- 'DOMAIN-SUFFIX,instapaper.com,新七七云机场'
+- 'DOMAIN-SUFFIX,ipn.li,新七七云机场'
+- 'DOMAIN-SUFFIX,is.gd,新七七云机场'
+- 'DOMAIN-SUFFIX,issuu.com,新七七云机场'
+- 'DOMAIN-SUFFIX,itgonglun.com,新七七云机场'
+- 'DOMAIN-SUFFIX,itun.es,新七七云机场'
+- 'DOMAIN-SUFFIX,ixquick.com,新七七云机场'
+- 'DOMAIN-SUFFIX,j.mp,新七七云机场'
+- 'DOMAIN-SUFFIX,js.revsci.net,新七七云机场'
+- 'DOMAIN-SUFFIX,jshint.com,新七七云机场'
+- 'DOMAIN-SUFFIX,jtvnw.net,新七七云机场'
+- 'DOMAIN-SUFFIX,justgetflux.com,新七七云机场'
+- 'DOMAIN-SUFFIX,kat.cr,新七七云机场'
+- 'DOMAIN-SUFFIX,klip.me,新七七云机场'
+- 'DOMAIN-SUFFIX,libsyn.com,新七七云机场'
+- 'DOMAIN-SUFFIX,linkedin.com,新七七云机场'
+- 'DOMAIN-SUFFIX,line-apps.com,新七七云机场'
+- 'DOMAIN-SUFFIX,linode.com,新七七云机场'
+- 'DOMAIN-SUFFIX,lithium.com,新七七云机场'
+- 'DOMAIN-SUFFIX,littlehj.com,新七七云机场'
+- 'DOMAIN-SUFFIX,live.com,新七七云机场'
+- 'DOMAIN-SUFFIX,live.net,新七七云机场'
+- 'DOMAIN-SUFFIX,livefilestore.com,新七七云机场'
+- 'DOMAIN-SUFFIX,llnwd.net,新七七云机场'
+- 'DOMAIN-SUFFIX,macid.co,新七七云机场'
+- 'DOMAIN-SUFFIX,macromedia.com,新七七云机场'
+- 'DOMAIN-SUFFIX,macrumors.com,新七七云机场'
+- 'DOMAIN-SUFFIX,mashable.com,新七七云机场'
+- 'DOMAIN-SUFFIX,mathjax.org,新七七云机场'
+- 'DOMAIN-SUFFIX,medium.com,新七七云机场'
+- 'DOMAIN-SUFFIX,mega.co.nz,新七七云机场'
+- 'DOMAIN-SUFFIX,mega.nz,新七七云机场'
+- 'DOMAIN-SUFFIX,megaupload.com,新七七云机场'
+- 'DOMAIN-SUFFIX,microsofttranslator.com,新七七云机场'
+- 'DOMAIN-SUFFIX,mindnode.com,新七七云机场'
+- 'DOMAIN-SUFFIX,mobile01.com,新七七云机场'
+- 'DOMAIN-SUFFIX,modmyi.com,新七七云机场'
+- 'DOMAIN-SUFFIX,msedge.net,新七七云机场'
+- 'DOMAIN-SUFFIX,myfontastic.com,新七七云机场'
+- 'DOMAIN-SUFFIX,name.com,新七七云机场'
+- 'DOMAIN-SUFFIX,nextmedia.com,新七七云机场'
+- 'DOMAIN-SUFFIX,nsstatic.net,新七七云机场'
+- 'DOMAIN-SUFFIX,nssurge.com,新七七云机场'
+- 'DOMAIN-SUFFIX,nyt.com,新七七云机场'
+- 'DOMAIN-SUFFIX,nytimes.com,新七七云机场'
+- 'DOMAIN-SUFFIX,omnigroup.com,新七七云机场'
+- 'DOMAIN-SUFFIX,onedrive.com,新七七云机场'
+- 'DOMAIN-SUFFIX,onenote.com,新七七云机场'
+- 'DOMAIN-SUFFIX,ooyala.com,新七七云机场'
+- 'DOMAIN-SUFFIX,openvpn.net,新七七云机场'
+- 'DOMAIN-SUFFIX,openwrt.org,新七七云机场'
+- 'DOMAIN-SUFFIX,orkut.com,新七七云机场'
+- 'DOMAIN-SUFFIX,osxdaily.com,新七七云机场'
+- 'DOMAIN-SUFFIX,outlook.com,新七七云机场'
+- 'DOMAIN-SUFFIX,ow.ly,新七七云机场'
+- 'DOMAIN-SUFFIX,paddleapi.com,新七七云机场'
+- 'DOMAIN-SUFFIX,parallels.com,新七七云机场'
+- 'DOMAIN-SUFFIX,parse.com,新七七云机场'
+- 'DOMAIN-SUFFIX,pdfexpert.com,新七七云机场'
+- 'DOMAIN-SUFFIX,periscope.tv,新七七云机场'
+- 'DOMAIN-SUFFIX,pinboard.in,新七七云机场'
+- 'DOMAIN-SUFFIX,pinterest.com,新七七云机场'
+- 'DOMAIN-SUFFIX,pixelmator.com,新七七云机场'
+- 'DOMAIN-SUFFIX,pixiv.net,新七七云机场'
+- 'DOMAIN-SUFFIX,playpcesor.com,新七七云机场'
+- 'DOMAIN-SUFFIX,playstation.com,新七七云机场'
+- 'DOMAIN-SUFFIX,playstation.com.hk,新七七云机场'
+- 'DOMAIN-SUFFIX,playstation.net,新七七云机场'
+- 'DOMAIN-SUFFIX,playstationnetwork.com,新七七云机场'
+- 'DOMAIN-SUFFIX,pushwoosh.com,新七七云机场'
+- 'DOMAIN-SUFFIX,rime.im,新七七云机场'
+- 'DOMAIN-SUFFIX,servebom.com,新七七云机场'
+- 'DOMAIN-SUFFIX,sfx.ms,新七七云机场'
+- 'DOMAIN-SUFFIX,shadowsocks.org,新七七云机场'
+- 'DOMAIN-SUFFIX,sharethis.com,新七七云机场'
+- 'DOMAIN-SUFFIX,shazam.com,新七七云机场'
+- 'DOMAIN-SUFFIX,skype.com,新七七云机场'
+- 'DOMAIN-SUFFIX,smartdns新七七云机场.com,新七七云机场'
+- 'DOMAIN-SUFFIX,smartmailcloud.com,新七七云机场'
+- 'DOMAIN-SUFFIX,sndcdn.com,新七七云机场'
+- 'DOMAIN-SUFFIX,sony.com,新七七云机场'
+- 'DOMAIN-SUFFIX,soundcloud.com,新七七云机场'
+- 'DOMAIN-SUFFIX,sourceforge.net,新七七云机场'
+- 'DOMAIN-SUFFIX,spotify.com,新七七云机场'
+- 'DOMAIN-SUFFIX,squarespace.com,新七七云机场'
+- 'DOMAIN-SUFFIX,sstatic.net,新七七云机场'
+- 'DOMAIN-SUFFIX,st.luluku.pw,新七七云机场'
+- 'DOMAIN-SUFFIX,stackoverflow.com,新七七云机场'
+- 'DOMAIN-SUFFIX,startpage.com,新七七云机场'
+- 'DOMAIN-SUFFIX,staticflickr.com,新七七云机场'
+- 'DOMAIN-SUFFIX,steamcommunity.com,新七七云机场'
+- 'DOMAIN-SUFFIX,symauth.com,新七七云机场'
+- 'DOMAIN-SUFFIX,symcb.com,新七七云机场'
+- 'DOMAIN-SUFFIX,symcd.com,新七七云机场'
+- 'DOMAIN-SUFFIX,tapbots.com,新七七云机场'
+- 'DOMAIN-SUFFIX,tapbots.net,新七七云机场'
+- 'DOMAIN-SUFFIX,tdesktop.com,新七七云机场'
+- 'DOMAIN-SUFFIX,techcrunch.com,新七七云机场'
+- 'DOMAIN-SUFFIX,techsmith.com,新七七云机场'
+- 'DOMAIN-SUFFIX,thepiratebay.org,新七七云机场'
+- 'DOMAIN-SUFFIX,theverge.com,新七七云机场'
+- 'DOMAIN-SUFFIX,time.com,新七七云机场'
+- 'DOMAIN-SUFFIX,timeinc.net,新七七云机场'
+- 'DOMAIN-SUFFIX,tiny.cc,新七七云机场'
+- 'DOMAIN-SUFFIX,tinypic.com,新七七云机场'
+- 'DOMAIN-SUFFIX,tmblr.co,新七七云机场'
+- 'DOMAIN-SUFFIX,todoist.com,新七七云机场'
+- 'DOMAIN-SUFFIX,trello.com,新七七云机场'
+- 'DOMAIN-SUFFIX,trustasiassl.com,新七七云机场'
+- 'DOMAIN-SUFFIX,tumblr.co,新七七云机场'
+- 'DOMAIN-SUFFIX,tumblr.com,新七七云机场'
+- 'DOMAIN-SUFFIX,tweetdeck.com,新七七云机场'
+- 'DOMAIN-SUFFIX,tweetmarker.net,新七七云机场'
+- 'DOMAIN-SUFFIX,twitch.tv,新七七云机场'
+- 'DOMAIN-SUFFIX,txmblr.com,新七七云机场'
+- 'DOMAIN-SUFFIX,typekit.net,新七七云机场'
+- 'DOMAIN-SUFFIX,ubertags.com,新七七云机场'
+- 'DOMAIN-SUFFIX,ublock.org,新七七云机场'
+- 'DOMAIN-SUFFIX,ubnt.com,新七七云机场'
+- 'DOMAIN-SUFFIX,ulyssesapp.com,新七七云机场'
+- 'DOMAIN-SUFFIX,urchin.com,新七七云机场'
+- 'DOMAIN-SUFFIX,usertrust.com,新七七云机场'
+- 'DOMAIN-SUFFIX,v.gd,新七七云机场'
+- 'DOMAIN-SUFFIX,v2ex.com,新七七云机场'
+- 'DOMAIN-SUFFIX,vimeo.com,新七七云机场'
+- 'DOMAIN-SUFFIX,vimeocdn.com,新七七云机场'
+- 'DOMAIN-SUFFIX,vine.co,新七七云机场'
+- 'DOMAIN-SUFFIX,vivaldi.com,新七七云机场'
+- 'DOMAIN-SUFFIX,vox-cdn.com,新七七云机场'
+- 'DOMAIN-SUFFIX,vsco.co,新七七云机场'
+- 'DOMAIN-SUFFIX,vultr.com,新七七云机场'
+- 'DOMAIN-SUFFIX,w.org,新七七云机场'
+- 'DOMAIN-SUFFIX,w3schools.com,新七七云机场'
+- 'DOMAIN-SUFFIX,webtype.com,新七七云机场'
+- 'DOMAIN-SUFFIX,wikiwand.com,新七七云机场'
+- 'DOMAIN-SUFFIX,wikileaks.org,新七七云机场'
+- 'DOMAIN-SUFFIX,wikimedia.org,新七七云机场'
+- 'DOMAIN-SUFFIX,wikipedia.com,新七七云机场'
+- 'DOMAIN-SUFFIX,wikipedia.org,新七七云机场'
+- 'DOMAIN-SUFFIX,windows.com,新七七云机场'
+- 'DOMAIN-SUFFIX,windows.net,新七七云机场'
+- 'DOMAIN-SUFFIX,wire.com,新七七云机场'
+- 'DOMAIN-SUFFIX,wordpress.com,新七七云机场'
+- 'DOMAIN-SUFFIX,workflowy.com,新七七云机场'
+- 'DOMAIN-SUFFIX,wp.com,新七七云机场'
+- 'DOMAIN-SUFFIX,wsj.com,新七七云机场'
+- 'DOMAIN-SUFFIX,wsj.net,新七七云机场'
+- 'DOMAIN-SUFFIX,xda-developers.com,新七七云机场'
+- 'DOMAIN-SUFFIX,xeeno.com,新七七云机场'
+- 'DOMAIN-SUFFIX,xiti.com,新七七云机场'
+- 'DOMAIN-SUFFIX,yahoo.com,新七七云机场'
+- 'DOMAIN-SUFFIX,yimg.com,新七七云机场'
+- 'DOMAIN-SUFFIX,ying.com,新七七云机场'
+- 'DOMAIN-SUFFIX,yoyo.org,新七七云机场'
+- 'DOMAIN-SUFFIX,ytimg.com,新七七云机场'
+- 'DOMAIN-SUFFIX,telegra.ph,新七七云机场'
+- 'DOMAIN-SUFFIX,telegram.org,新七七云机场'
+- 'IP-CIDR,91.108.4.0/22,新七七云机场,no-resolve'
+- 'IP-CIDR,91.108.8.0/21,新七七云机场,no-resolve'
+- 'IP-CIDR,91.108.16.0/22,新七七云机场,no-resolve'
+- 'IP-CIDR,91.108.56.0/22,新七七云机场,no-resolve'
+- 'IP-CIDR,149.154.160.0/20,新七七云机场,no-resolve'
+- 'IP-CIDR6,2001:67c:4e8::/48,新七七云机场,no-resolve'
+- 'IP-CIDR6,2001:b28:f23d::/48,新七七云机场,no-resolve'
+- 'IP-CIDR6,2001:b28:f23f::/48,新七七云机场,no-resolve'
+- 'IP-CIDR,120.232.181.162/32,新七七云机场,no-resolve'
+- 'IP-CIDR,120.241.147.226/32,新七七云机场,no-resolve'
+- 'IP-CIDR,120.253.253.226/32,新七七云机场,no-resolve'
+- 'IP-CIDR,120.253.255.162/32,新七七云机场,no-resolve'
+- 'IP-CIDR,120.253.255.34/32,新七七云机场,no-resolve'
+- 'IP-CIDR,120.253.255.98/32,新七七云机场,no-resolve'
+- 'IP-CIDR,180.163.150.162/32,新七七云机场,no-resolve'
+- 'IP-CIDR,180.163.150.34/32,新七七云机场,no-resolve'
+- 'IP-CIDR,180.163.151.162/32,新七七云机场,no-resolve'
+- 'IP-CIDR,180.163.151.34/32,新七七云机场,no-resolve'
+- 'IP-CIDR,203.208.39.0/24,新七七云机场,no-resolve'
+- 'IP-CIDR,203.208.40.0/24,新七七云机场,no-resolve'
+- 'IP-CIDR,203.208.41.0/24,新七七云机场,no-resolve'
+- 'IP-CIDR,203.208.43.0/24,新七七云机场,no-resolve'
+- 'IP-CIDR,203.208.50.0/24,新七七云机场,no-resolve'
+- 'IP-CIDR,220.181.174.162/32,新七七云机场,no-resolve'
+- 'IP-CIDR,220.181.174.226/32,新七七云机场,no-resolve'
+- 'IP-CIDR,220.181.174.34/32,新七七云机场,no-resolve'
+- 'DOMAIN,injections.adguard.org,新七七云机场'
+- 'DOMAIN,local.adguard.org,新七七云机场'
+- 'DOMAIN-SUFFIX,local,新七七云机场'
+- 'IP-CIDR,127.0.0.0/8,新七七云机场'
+- 'IP-CIDR,172.16.0.0/12,新七七云机场'
+- 'IP-CIDR,192.168.0.0/16,新七七云机场'
+- 'IP-CIDR,10.0.0.0/8,新七七云机场'
+- 'IP-CIDR,17.0.0.0/8,新七七云机场'
+- 'IP-CIDR,100.64.0.0/10,新七七云机场'
+- 'IP-CIDR,224.0.0.0/4,新七七云机场'
+- 'IP-CIDR6,fe80::/10,新七七云机场'
+- 'DOMAIN-SUFFIX,cn,新七七云机场'
+- 'DOMAIN-KEYWORD,-cn,新七七云机场'
+- 'GEOIP,CN,新七七云机场'
+- 'MATCH,新七七云机场'
